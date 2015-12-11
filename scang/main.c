@@ -2,17 +2,19 @@
 //  main.c
 //  scang
 //
-//  Created by 新华视讯 on 15/9/2.
+//  Created by RexMa on 15/9/2.
 //  Copyright (c) 2015年 RexMa. All rights reserved.
 //
 
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(int argc, const char * argv[]) {
     // insert code here...
     int a[10];
     for (int i = 1; i< 10; i++) {
-        scanf("%d",&a[i]);
+//        scanf("%d",&a[i]);
+        a[i] = rand();
     }
     
     for (int i = 1; i < 10; i++) {
@@ -29,9 +31,8 @@ int main(int argc, const char * argv[]) {
     }
     
     for (int i = 1; i< 10; i++) {
-        printf("%d ",a[i]);
+        printf("%d \n",a[i]);
     }
     
-    printf("Hello, World!\n");
     return 0;
 }
